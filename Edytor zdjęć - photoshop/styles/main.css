@@ -1,0 +1,11 @@
+canvas {
+    border: 5px dotted #96ad3a;
+}
+
+label {
+    display: block;
+}
+
+.tools-input {
+    margin-bottom: 10px;
+}
