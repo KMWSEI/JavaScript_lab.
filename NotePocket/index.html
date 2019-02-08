@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NotePocket</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Merriweather|Open+Sans" rel="stylesheet">
+</head>
+<body>
+<div id="notes-container"></div>
+<button id="btn-show-modal" class="btn btn--rounded">+</button>
+<div id="message" class="message">
+    Add your notes!
+</div>
+<div id="modal-layer" class="modal is-hidden">
+  <div class="modal__body">
+    <button class="btn btn-close" id="btn-close-modal"></button>
+    <input type="text" id="title-input" class="h-margin-bottom" placeholder="Title" maxlength="128" />
+    <textarea id="description-input" class="h-margin-bottom" placeholder="Description" rows="6" maxlength="256"></textarea>
+    <div class="checkbox-wrapper h-margin-bottom">
+      <input type="checkbox" id="highlighted-checkbox"  />
+      <label for="highlighted-checkbox">Important note</label>
+    </div>
+    <div class="h-text-center">
+      <button id="btn-create-note" class="btn btn--primary">CREATE NEW NOTE</button>
+    </div>
+  </div>
+</div>
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
